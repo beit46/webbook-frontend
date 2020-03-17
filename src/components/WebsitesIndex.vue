@@ -1,8 +1,7 @@
 <template>
   <div>
-    LIST ALL THE AVAILABLE WEBSITES
 
-    PROVIDE PAGINATION
+    <h1 class="title">WEBBOOK</h1>
     <websites-list></websites-list>
   </div>
 </template>

@@ -13,8 +13,12 @@
   <body>
   <div id="app">
     <!-- Buefy components goes here -->
+    <div class="container">
+      <div class="notification">
 
-    <websites-index></websites-index>
+        <websites-index></websites-index>
+      </div>
+    </div>
   </div>
 
   </body>
@@ -41,5 +45,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background-color: white;
 }
 </style>

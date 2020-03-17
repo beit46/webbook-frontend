@@ -35,6 +35,12 @@
                     </span>
 
             </b-table-column>
+
+            <b-table-column field="created_at" label="Created" centered sortable>
+                    <span class="tag is-success">
+                        {{ new Date(props.row.created_at).toLocaleDateString() }}
+                    </span>
+            </b-table-column>
           </template>
 
           <template slot="bottom-left">
