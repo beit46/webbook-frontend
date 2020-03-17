@@ -41,7 +41,7 @@ export default new Vuex.Store({
         url: website.url,
         created_at: moment().toISOString(),
       }
-      
+
       state.websites.push(w);
     },
 

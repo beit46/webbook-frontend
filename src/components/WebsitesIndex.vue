@@ -27,6 +27,7 @@
 <script>
   import WebsitesList from './WebsitesList';
   import CreateWebsiteModal from './CreateWebsiteModal';
+  import axios from 'axios';
 
   export default {
     name: 'WebsitesIndex',
@@ -39,7 +40,18 @@
     data() {
       return {
         isComponentModalActive: false,
-      }
+      };
+    },
+
+    mounted() {
+
+      axios.get('http://localhost:8000/api/websites', (websites) => {
+        console.log('I got something');
+
+      }).catch((error) => {
+        console.log('There was a problem ');
+        
+      })
     }
   };
 </script>
