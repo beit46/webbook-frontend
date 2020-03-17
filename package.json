@@ -10,7 +10,9 @@
   "dependencies": {
     "buefy": "^0.8.13",
     "core-js": "^2.6.5",
+    "moment": "^2.24.0",
     "vue": "^2.6.10",
+    "vuelidate": "^0.7.5",
     "vuex": "^3.0.1"
   },
   "devDependencies": {

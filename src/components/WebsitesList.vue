@@ -54,8 +54,6 @@
         </b-table>
       </section>
 
-      <b-button type="is-primary">Primary</b-button>
-
     </div>
 </template>
 
