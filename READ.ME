@@ -1,0 +1,20 @@
+Resolution Process Journal
+
+1. Pre: The idea Is simple, create a bookmark application prototype, I will start by developing a simple frontend using Vue, thanks to vue-cli setting up a new project is a breeze, vue create [project_name] pops you up into configuration mode. I want to use Airbnb configuration to speed up, but we could go deep and configure our own standards, as I believe each team should do. I will use vuex for storage, I have mixed feelings about it, but I want to give it another try to see if I can find a better way to work with it. We will use babel and webpack to compile, minimize and optimize our code, I’m used to this stack and I like it, web pack is very configurable and allows to get anything done. 
+2. Once the setup is ready, npm run serve allows to see our website live on our browser. Two minutes and we are ready to code. 
+3. Now the idea is very simple, create a list of websites to showcase our bookmarks, and then create a form, I will use an overlay, to add a new bookmark. 
+4. For the graphical part I will use bulma, is a while I wanted to give this a try, There is a version built on top of vuejs, it’s simply amazing, like eating Toblerone! https://buefy.org/documentation/start
+    1. We will import this globally, as we’ll use this all across the application. Optimization always at the end of a project in my opinion, but in that case, I would start checking what we use and what we don’t and try to import only what’s needed, then using lazy import we can import only what is needed at a specific time and cut even more the request size. Optimization are endless, it’s just about sitting down and iterating one step after another. 
+5. Creating a table with bulma was an amazing experience, basic cases with vuex are a breeze, but still there is so much overload between getter mutation and action, I believe we could make this so much simpler. Making pagination was about setting a copule boolean into b-table and not much more. This was really a pleasure to create. 
+6. Now trying to make it a bit nicer to look at, just adding a container make this look beautiful, simple and to the point. Let’s add some feature (I’m a bit more then one hour into the test)
+7. Ok let’s create the add part, I’ll use a full screen modal to let the user fully focus on his task. I will use Vuelidate to validate the form data, it seems very promising needs to be checked out. 
+    1. This thing is truly wonderful to use, thanks to this guy, I’m also “properly” validating url, what a breeze! We can move forward from here and do proper validation, but you get the point :)
+8. I think this should be enough, 2 hours into the test, let’s move to the backend.
+9. As for vue, setting up a backend is like drinking tea, just composer create-project --prefer-dist laravel/laravel myapp, and  php artisan serve. As simple as that. We leverage composer as I haven’t setup a vm for this exercise, is getting late 
+10. I created a model Websites with his migration and controller, it’s getting late and I feel tired and unproductive so for today the test ends here. I would have loved to connect the thing and try out GraphQL, but I have no more time and I promised to deliver by tonight. 
+
+This was a nice test, overall I feel the frontend is very very interesting and well done, I would have loved to use vue-router but it wasn’t necessary. The backend is really poor, it’s 40 minutes of work, but it does what was asked so I’m still happy I got to reach both objectives. This is a small sneak peak of what I am capable of, I can deliver a lot of value to your software, and to your business as well.
+
+Can’t wait to hear from you, 
+
+Enrico 
